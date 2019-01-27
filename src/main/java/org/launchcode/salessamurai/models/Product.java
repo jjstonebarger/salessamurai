@@ -1,4 +1,4 @@
 package org.launchcode.salessamurai.models;
 
-public class Products {
+public class Product {
 }
