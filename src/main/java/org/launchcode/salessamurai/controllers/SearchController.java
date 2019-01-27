@@ -1,5 +1,10 @@
 package org.launchcode.salessamurai.controllers;
 
+import org.launchcode.salessamurai.models.Product;
+import org.launchcode.salessamurai.models.Users;
+import org.launchcode.salessamurai.models.data.ProductDAO;
+import org.launchcode.salessamurai.models.data.SearchForm;
+import org.launchcode.salessamurai.models.data.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

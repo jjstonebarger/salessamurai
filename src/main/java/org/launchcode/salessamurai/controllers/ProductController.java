@@ -1,5 +1,10 @@
 package org.launchcode.salessamurai.controllers;
 
+import org.launchcode.salessamurai.models.Product;
+import org.launchcode.salessamurai.models.Users;
+import org.launchcode.salessamurai.models.Wholesalers;
+import org.launchcode.salessamurai.models.data.ProductDAO;
+import org.launchcode.salessamurai.models.data.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -43,7 +48,7 @@ public class ProductController {
 
         model.addAttribute("title", "Add Product");
         model.addAttribute(new Product());
-        model.addAttribute("times", Time.values());
+        model.addAttribute("wholesalers", Wholesalers.values());
 
         return "product/add";
     }
@@ -56,7 +61,7 @@ public class ProductController {
         Users u = userDAO.findByUsername(username).get(0);
         if(errors.hasErrors()){
             model.addAttribute("title", "Add Product");
-            model.addAttribute("times", Time.values());
+            model.addAttribute("times", Wholesalers.values());
             return "product/add";
         }
         newProduct.setUser(u);
