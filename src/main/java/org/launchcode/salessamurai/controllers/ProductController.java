@@ -7,7 +7,7 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(value = "products")
+@RequestMapping(value = "product")
 public class ProductController {
 
     @Autowired
@@ -29,8 +29,8 @@ public class ProductController {
             return "redirect:/users/login";
         }
         Users u = userDAO.findByUsername(username).get(0);
-        model.addAttribute("product", u.getProduct());
-        model.addAttribute("title", "My Product");
+        model.addAttribute("products", u.getProducts());
+        model.addAttribute("title", "My Products");
 
         return "product/index";
     }
@@ -72,7 +72,7 @@ public class ProductController {
             return "redirect:/users/login";
         }
         Users u = userDAO.findByUsername(username).get(0);
-        model.addAttribute("product", u.getProduct());
+        model.addAttribute("products", u.getProducts());
         model.addAttribute("title", "Remove Product");
         return "product/remove";
     }
