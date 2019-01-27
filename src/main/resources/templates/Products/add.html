@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<nav th:replace="fragments :: navigation"></nav>
+<head th:replace="fragments :: head"></head>
+<body class="container">
+<h1 th:text="${title}">Default Title</h1>
+
+
+
+<form method="post" style="max-width:600px;" th:object="${product}">
+    <div class="form-group">
+        <label th:for="manufacturer">Manufacturer</label>
+        <input class="form-control" th:field ="*{manufacturer}" />
+        <span th:errors="*{manufacturer}" class="error"></span>
+    </div>
+    <div class="form-group">
+        <label th:for="model">Model</label>
+        <input class="form-control" th:field = "*{model}" />
+        <span th:errors="*{model}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="wholesalers">Wholesalers</label>
+        <select th:field="*{wholesalers}">
+            <option th:each="wholesalers : ${wholesalerss}"
+                    th:text="${wholesalers.name}"
+                    th:value="${wholesalers}"></option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label th:for="mfgID">Mfg ID</label>
+        <input class="form-control" th:field="*{mfgID}" />
+        <span th:errors="*{mfdID}" class="error"></span>
+    </div>
+
+    <div class="form-group">
+        <label th:for="skuNumber">SKU Number</label>
+        <input class="form-control" th:field= "*{skuNumber}" />
+    </div>
+
+    <div class="form-group">
+        <label th:for="quantity">Quantity</label>
+        <input class="form-control" th:field="*{quantity}" />
+    </div>
+    <div class="form-group">
+        <label th:for="wholesalePrice">Wholesale Price</label>
+        <input class="form-control" th:field= "*{wholesalePrice}" />
+    </div>
+    <div class="form-group">
+        <label th:for="retailPrice">Retail Price</label>
+        <input class="form-control" th:field= "*{retailPrice}" />
+    </div>
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <label th:for="notes"> Notes</label>
+        </div>
+        <textarea class="form-control" aria-label="With textarea" th:field= "*{notes}"></textarea>
+    </div>
+
+
+    <input type="submit" value="Add Product" />
+</form>
+
+</body>
+</html>
