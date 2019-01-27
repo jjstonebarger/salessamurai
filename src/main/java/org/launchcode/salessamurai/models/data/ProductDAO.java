@@ -1,4 +1,21 @@
 package org.launchcode.salessamurai.models.data;
 
-public interface ProductDAO {
+import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Repository
+@Transactional
+public interface ProductDAO extends CrudRepository<Product, Integer> {
+
+    //Need a list of all the products for a certain user "products"
+    public ArrayList<Product> products = new ArrayList<>();
+    //products = dao.findall()
+
+    //find by user_id
+    List<Product> findByUserId(int id);
+
+    ArrayList<Product> findByName(String value);
 }
+
