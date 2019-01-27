@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<nav th:replace="fragments :: navigation"></nav>
+<head th:replace="fragments :: head"></head>
+
+<body class="container">
+
+<h1 th:text="${title}">Default Title</h1>
+
+
+
+<p th:unless="${products} and ${products.size()}">No Products Added Yet</p>
+
+
+<!--<nav th:replace="fragments :: nav_two"></nav> -->
+
+<div class="row">
+    <div class="col-sm-6 col-lg-4">
+        <div class="brand-card">
+            <div class="brand-card-body">
+                <div>
+                    <div class="text-value">Sportssouth</div>
+                    <div class="card-text">
+                        <ul th:each="medication : ${medications}">
+                            <div th:if="${product.wholesalers.name() == 'SPORTSSOUTH'}">
+                                <li><a th:href = " '/product/' + ${product.id}"
+                                       th:text="${product.name}"></a></li>
+                            </div>
+                        </ul>
+
+                    </div>
+                </div>
+                <div>
+                    <br  />
+                    <div class="text-value">RSRGroup</div>
+                    <div class="card-text">
+                        <ul th:each="product : ${products}">
+                            <div th:if="${product.wholesalers.name() == 'RSRGROUP'}">
+                                <li><a th:href = " '/product/' + ${product.id}"
+                                       th:text="${product.name}" ></a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/.col-->
+    <div class="col-sm-6 col-lg-4">
+        <div class="brand-card">
+            <div class="brand-card-body">
+                <div>
+                    <br  />
+                    <div class="text-value">GreenSupply</div>
+                    <div class="card-text">
+                        <ul th:each="product : ${products}">
+                            <div th:if="${product.wholesalers.name() == 'GREENSUPPLY'}">
+                                <li><a th:href = " '/product/' + ${product.id}"
+                                       th:text="${product.name}" ></a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <br  />
+                    <div class="text-value">Davidsons</div>
+                    <div class="card-text">
+                        <ul th:each="product : ${products}">
+                            <div th:if="${product.wholesalers.name() == 'DAVIDSONS'}">
+                                <li><a th:href = " '/product/' + ${product.id}"
+                                       th:text="${product.name}" ></a></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<a th:href = "@{/product/remove}" >Remove Product</a> | <a th:href = "@{/users/logout}">Logout</a>
+</body>
+</html>
