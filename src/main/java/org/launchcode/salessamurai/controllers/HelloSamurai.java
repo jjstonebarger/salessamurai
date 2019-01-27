@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-@Controller
+/*@Controller
 public class HelloSamurai {
 
     @RequestMapping(value = "")
@@ -14,3 +14,4 @@ public class HelloSamurai {
         return "Hello Samurai";
     }
 }
+/*
