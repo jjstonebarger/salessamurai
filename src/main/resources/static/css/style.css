@@ -1,0 +1,44 @@
+div.text-value{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a.nav-item{
+    font-color: #fff;
+}
+
+
+td, th {
+    padding: 18px;
+}
+
+tr:nth-child(odd) {
+    background-color: #B6AFD1;
+}
+
+table.medicine-page {
+    margin: 30px auto;
+    border: 1px solid #B6AFD1;
+    width: 80%;
+}
+
+table.medicine-page td:first-child {
+    font-weight: bold;
+}
+
+table.medicine-page td:last-child {
+    width: 80%;
+}
+
+.navbar{
+    background-color: #B6AFD1;
+}
+
+.error{
+    font-color: #F50808;
+}
+
+body{
+    background-image: url("CapstoneProject/images/71d2eFhlP+L._SY355.jpg");
+    background-color: #857aaf;
+}
