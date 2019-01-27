@@ -1,5 +1,9 @@
 package org.launchcode.salessamurai.models;
 
+
+
+
+
 @Entity
 public class Product {
     @Id
@@ -51,12 +55,12 @@ public class Product {
         return id;
     }
 
-    public String getName() {
-        return name;
+    public String getManufacturer() {
+        return manufacturer;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setManufacturer(String name) {
+        this.manufacturer = name;
     }
 
     public String getModel() {
@@ -67,11 +71,11 @@ public class Product {
         this.model = model;
     }
 
-    public Time getWholesalers() {
+    public Wholesalers getWholesalers() {
         return wholesalers;
     }
 
-    public void setWholesalers(Time time) {
+    public void setWholesalers(Wholesalers wholesalers) {
         this.wholesalers = wholesalers;
     }
 
@@ -84,7 +88,7 @@ public class Product {
     }
 
     public String getSkuNumber() {
-        return skuNumberr;
+        return skuNumber;
     }
 
     public void setSkuNumber(String skuNumber) {
