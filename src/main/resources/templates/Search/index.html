@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<nav th:replace="fragments :: navigation"></nav>
+<head th:replace="fragments :: head"></head>
+
+<body class="container">
+
+<h1 th:text="${title}">Default Title</h1>
+
+<div>
+    <form th:action="@{/search/results}" th:object="${searchForm}">
+        <div class="form-group">
+            <label th:for="keyword">Keyword</label>
+            <input class="form-control" th:field="*{keyword}" />
+        </div>
+
+        <input type="submit" value="Search" />
+    </form>
+</div>
+<div>
+    <div th:if="${products} and ${products.size()}">
+
+        <h3 th:text="${products.size() + ' Product(s) Found'}"></h3>
+        <ul th:each="product : ${products}">
+            <li><a th:href = " '/product/' + ${product.id}"
+                   th:text="${product.name}"></a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
