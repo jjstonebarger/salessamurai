@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<nav th:replace="fragments :: navigation"></nav>
+<head th:replace="fragments :: head"></head>
+
+<body class="container">
+
+<h1 th:text="${title}">Default Title</h1>
+
+
+</body>
+
+<div class="container body-content">
+
+    <table th:fragment="single product" class="product-page" >
+        <tr>
+            <th>Manufacturer</th>
+            <td th:text="${product.manufacturer}"></td>
+        </tr>
+        <tr>
+            <th>Model</th>
+            <td th:text="${product.model}"></td>
+        </tr>
+        <tr>
+            <th>Mfg ID</th>
+            <td th:text="${product.mfgNumber}"></td>
+        </tr>
+        <tr>
+            <th>SKU Number</th>
+            <td th:text="${product.skuNumber}"></td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td th:text="${product.quantity}"></td>
+        </tr>
+        <tr>
+            <th>Wholesale Price</th>
+            <td th:text="${product.wholesalePrice}"></td>
+        </tr>
+        <tr>
+            <th>Retail Price</th>
+            <td th:text="${product.retailPrice}"></td>
+        </tr>
+        <tr>
+            <th>Notes</th>
+            <td th:text="${product.notes}"></td>
+        </tr>
+    </table>
+
+</div>
+</html>
