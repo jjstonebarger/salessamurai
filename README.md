@@ -1,5 +1,13 @@
 # salessamurai
-Java CRUD app to track inventory of products by department
+Java CRUD app to track inventory of products by department.
+
+
+
+
+
+
+
+
 
 GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
