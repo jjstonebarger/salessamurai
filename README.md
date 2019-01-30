@@ -1,5 +1,6 @@
 # salessamurai
-Java CRUD app to track inventory of products by department.
+
+**Java CRUD app to track inventory of products by department.**
 
 **Overview**
 
@@ -33,7 +34,7 @@ https://www.pivotaltracker.com/n/projects/2240310
 
 
 
-=============================================================================================================================
+===============================================================================================
 
 
 
