@@ -8,7 +8,7 @@ I'm going to build a inventory tracker. Small business owners often face the tas
 
 **Features**
 
-* Sign In: The project will allow the user to create and be directed to there own personal page where they can add products. This is useful due to fact that there are drastically different departments (ie; Optics, Rifle Parts). The personal home will allow feature all of my suppliers for ease of ordering, shipping ETA, profit margin, etc.
+* Sign In: The project will allow the user to create and be directed to there own personal page where they can add products. This is useful due to fact that there are drastically different departments (ie; Optics, Rifle Parts). The personal home will feature all of my suppliers for ease of ordering, shipping ETA, profit margin, etc.
 
 * Add Products: Allow the user to add products with various data fields. Wholesale price, quantity, Manufacturer ID, SKU, etc.
 
