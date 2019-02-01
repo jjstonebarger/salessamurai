@@ -8,9 +8,9 @@ I'm going to build a inventory tracker. Small business owners often face the tas
 
 **Features**
 
-* Sign In: The project will allow the user to create and be directed to there own personal page where they can add products. This is useful due to fact that there are drastically different departments (ie; Optics, Rifle Parts). The personal home will feature all of my suppliers for ease of ordering, shipping ETA, profit margin, etc.
+* Sign In: The project will allow the user to create and be directed to there own personal page where they can add products. This is useful due to fact that there are drastically different departments (ie; Optics, Rifle Parts). The personal home page will feature all of my suppliers for ease of ordering, shipping ETA, profit margin, etc.
 
-* Add Products: Allow the user to add products with various data fields. Wholesale price, quantity, Manufacturer ID, SKU, etc.
+* Add Products: Allow the user to add products with various data fields. (Wholesale price, quantity, Manufacturer ID, SKU, etc.)
 
 * Edit Products: Allow the user to edit various data fields on products.
 
@@ -28,7 +28,8 @@ I'm going to build a inventory tracker. Small business owners often face the tas
 **What I'll Have to Learn**
 
 Diving deeper into MySQL, Further experimentation with Front End Design, Possible incorporation of data feeds from suppliers
-Project Tracker
+
+**Project Tracker**
 
 https://www.pivotaltracker.com/n/projects/2240310
 
