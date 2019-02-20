@@ -13,12 +13,12 @@ td, th {
 }
 
 tr:nth-child(odd) {
-    background-color: #B6AFD1;
+    background-color: #b5a5f3;
 }
 
 table.medicine-page {
     margin: 30px auto;
-    border: 1px solid #B6AFD1;
+    border: 1px solid #b5a5f3;
     width: 80%;
 }
 
@@ -31,7 +31,7 @@ table.medicine-page td:last-child {
 }
 
 .navbar{
-    background-color: #B6AFD1;
+    background-color: #b5a5f3;
 }
 
 .error{
@@ -39,6 +39,22 @@ table.medicine-page td:last-child {
 }
 
 body{
-    background-image: url("CapstoneProject/images/71d2eFhlP+L._SY355.jpg");
-    background-color: #857aaf;
+    background-color: blue;
+      background-image: radial-gradient(
+        rgba(205, 200, 224, 1.70), blue 180%
+      );
+      height: 100vh;
+
 }
+
+
+
+h1{
+     font-family: 'Shanghai', arial;
+}
+
+a{
+    color:#333;
+}
+
+
